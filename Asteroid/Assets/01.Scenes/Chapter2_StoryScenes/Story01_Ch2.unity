@@ -649,7 +649,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 134f1deaae3ead74cae299b66f618099, type: 2}
+  - {fileID: 2100000, guid: 13dae588ebf81974a818f75f6c125ae2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d1127f416a19e40bd53d0bfd08d1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.25
+  scrollSpeed: 0.05
   rend: {fileID: 435699952}
 --- !u!1 &498865292
 GameObject:
@@ -2252,7 +2252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2133002554}
-  - component: {fileID: 2133002553}
+  - component: {fileID: 2133002555}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -2260,41 +2260,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2133002553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133002552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3373a8db7f4094096a8c3dbd6ef643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 1116484431}
-  dialogueList:
-  - "\uACE7 \uC800\uD76C \uBAA9\uC801\uC9C0\uC778 \uC2E0\uAD6C \uD589\uC131\uC5D0
-    \uB3C4\uCC29\uD569\uB2C8\uB2E4 \uB300\uC7A5."
-  - "\uC74C \uB4DC\uB514\uC5B4 \uB3C4\uCC29\uC774\uAD70"
-  - "\uBAA8\uB450 \uACE0\uC0DD\uD588\uB2E4. "
-  - "\uB3C4\uCC29\uD558\uAE30 \uC804\uAE4C\uC9C0 \uC26C\uACE0\uC788\uB3C4\uB85D"
-  - '!!!'
-  - "\uB300\uC7A5 \uC18C\uD589\uC131 \uADA4\uB3C4\uAC00 \uC774\uC0C1\uD569\uB2C8\uB2E4!!"
-  - "\uC774\uB300\uB85C\uBA74 \uCDA9\uB3CC\uD569\uB2C8\uB2E4!!"
-  - '!!!'
-  - "\uBAA8\uB450 \uC704\uCE58\uB85C!"
-  - "\uC6B0\uC8FC\uC120\uC744 \uBA48\uCD94\uACE0 \uB300\uD3EC\uB97C \uC900\uBE44\uD574\uB77C!"
-  - '!!!'
-  Ob: {fileID: 1456051176}
-  images:
-  - {fileID: 21300000, guid: 4e6207ad73183034b880fa4bc5fc9ff6, type: 3}
-  - {fileID: 21300000, guid: ef8c5e29519a3d440859eebc2b1b4fc8, type: 3}
-  targetImage: {fileID: 1480637825}
-  ImageIndex: 0
-  warring: {fileID: 498865292}
-  soundManager: {fileID: 1568996461}
-  SkipButton: {fileID: 813330902}
 --- !u!4 &2133002554
 Transform:
   m_ObjectHideFlags: 0
@@ -2310,3 +2275,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2133002555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133002552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a5887cfd37cb345a9f7c6f3da830da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 1116484431}
+  dialogueList:
+  - "\uB2E4\uD589\uC774\uB124\uC694 \uBB34\uC0AC\uD788 \uCC29\uB959\uD588\uC5B4\uC694!"
+  - "\uC5D4\uC9C4 \uC0C1\uD0DC\uB294 \uC5B4\uB5BB\uC9C0?"
+  - "\uC5D4\uC9C4\uC740.."
+  - "\uB9CE\uC774 \uACE0\uC7A5\uB09C \uC0C1\uD0DC\uC9C0\uB9CC \uADF8\uB798\uB3C4
+    \uC870\uAE08\uC740 \uAC00\uB3D9\uD560 \uC218 \uC788\uC744\uAC83 \uAC19\uC2B5\uB2C8\uB2E4."
+  - "\uB300\uC7A5 \uC774 \uD589\uC131\uC740 \uC815\uBCF4\uC5D0 \uB530\uB974\uBA74
+    \uD589\uC131\uD575\uC5D0\uC11C \uB098\uC624\uB294 \uB0C9\uAE30\uB85C \uD589\uC131
+    \uC804\uCCB4\uAC00 \uC5BC\uC5B4\uBD99\uC5B4\uC788\uB2E4\uACE0 \uD569\uB2C8\uB2E4."
+  - "\uC774 \uD589\uC131\uC758 \uD575\uC744 \uCC44\uCDE8\uD574 \uAC00\uACF5\uD558\uBA74"
+  - "\uC800\uD76C \uC5D4\uC9C4\uC744 \uACE0\uCE60 \uC218 \uC788\uC744\uAC83 \uAC19\uC2B5\uB2C8\uB2E4!"
+  - "\uC74C \uADF8\uB807\uAD70. \uBC14\uB85C \uCD9C\uBC1C\uD558\uC9C0"
+  - "\uC2E0\uBCD1! \uBC84\uD2BC\uC744 \uB20C\uB7EC \uC5D4\uC9C4\uC744 \uAC00\uB3D9\uD574\uB77C."
+  - 
+  Ob: {fileID: 1456051176}
+  images:
+  - {fileID: 21300000, guid: 4e6207ad73183034b880fa4bc5fc9ff6, type: 3}
+  - {fileID: 21300000, guid: ef8c5e29519a3d440859eebc2b1b4fc8, type: 3}
+  targetImage: {fileID: 1480637825}
+  ImageIndex: 0
+  SkipButton: {fileID: 813330902}

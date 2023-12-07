@@ -29,6 +29,9 @@ public class WaveSystem : MonoBehaviour
     public float timer = 0.0f;
     private bool TowerOnOff = true;
     public Button ToswerOn;
+    [SerializeField]
+    private int desiredSceneIndex = 1;
+
 
     //사운드 매니저
     public SoundManager soundManager;
@@ -212,7 +215,8 @@ public class WaveSystem : MonoBehaviour
 
     public void EndScene()
     {
-        SceneManager.LoadScene("Story02");
+        // 인덱스를 기반으로 씬 전환
+        SceneManager.LoadScene(desiredSceneIndex);
     }
 }
 

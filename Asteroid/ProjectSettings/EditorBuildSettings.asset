@@ -23,10 +23,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scenes/PlayScenes/Play.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/01.Scenes/Chapter1_StoryScenes/Story02.unity
     guid: fab6f525b71530c42815d68d0e1fea86
+  - enabled: 0
+    path: Assets/01.Scenes/Loading2.unity
+    guid: 7589da71fef0bf646880b8c845621295
+  - enabled: 1
+    path: Assets/01.Scenes/Chapter2_StoryScenes/Story01_Ch2.unity
+    guid: d0050e26fee7b634ba7baaffea2c670f
+  - enabled: 1
+    path: Assets/01.Scenes/PlayScenes/Play_Chp02.unity
+    guid: 1219efbd6d25ef64597f878e94074f50
+  - enabled: 1
+    path: Assets/01.Scenes/Chapter2_StoryScenes/Story02_Ch2.unity
+    guid: eae85024ea0317649967966c1d1676cf
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
