@@ -126,6 +126,13 @@ public class ShopUI : MonoBehaviour
                 TowerExplanation.text = "연속 공격을 한다";
                 break;
 
+            case 4:
+                TowerName.text = "라이트닝";
+                TowerPower.text = "공격력 5";
+                TowerSpeed.text = "빠름";
+                TowerExplanation.text = "레이저 번개를 쏜다";
+                break;
+
             default:
 
                 break;

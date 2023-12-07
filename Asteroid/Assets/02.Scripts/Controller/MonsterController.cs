@@ -88,6 +88,15 @@ public class MonsterController : MonoBehaviour
             // 여기에 적 캐릭터가 사망할 때 수행할 작업을 추가할 수 있습니다.
             // 예: 점수 증가, 이펙트 재생 등
             gameObject.SetActive(false);
+
+        if (gameObject.CompareTag("Money2"))
+        {
+            MoneyManager.Instance.AddMoney(50);
+            Debug.Log("돈 운석 파괴됨");
+        }
+        // 여기에 적 캐릭터가 사망할 때 수행할 작업을 추가할 수 있습니다.
+        // 예: 점수 증가, 이펙트 재생 등
+        gameObject.SetActive(false);
     }
 
     internal void ResetHealth()
