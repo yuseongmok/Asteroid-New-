@@ -30,6 +30,10 @@ public class Boss : MonoBehaviour
     public GameObject warningEffect;
     public Transform warnigSpawnPoint;
 
+    // 궁극기
+    public GameObject UltimateStage;
+    public Transform USspawn;
+
     // 데미지 입었을 때 효과
     public GameObject Panal;
     private float damageDisplayTime = 0.2f; // 데미지 표시 시간
@@ -115,9 +119,9 @@ public class Boss : MonoBehaviour
         HpBar.value = currentHp;        // Slider 줄어듦
         StartCoroutine(DisplayDamagePanal()); // 데미지 패널을 표시하는 코루틴 시작
 
-        if (currentHp <= 500)
+        if (currentHp <= 2500)
         {
-
+            UltimateStage1();
         }
         if (currentHp <= 0)
         {
@@ -125,6 +129,12 @@ public class Boss : MonoBehaviour
            
         }
 
+    }
+
+    // 보스 궁극기 함수
+    void UltimateStage1()
+    {
+        Instantiate(UltimateStage, USspawn.position, USspawn.rotation);
     }
 
     void Attack()   // BossAttack 프리팹 BossAttackSpawn에 생성

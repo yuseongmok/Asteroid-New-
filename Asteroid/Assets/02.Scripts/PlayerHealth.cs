@@ -46,7 +46,7 @@ public class PlayerHealth : MonoBehaviour
 
         healthBar.value = currentHealth;
 
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
         {
             SceneManager.LoadScene("Stage");
         }

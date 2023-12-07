@@ -2823,6 +2823,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &557775802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 557775803}
+  m_Layer: 0
+  m_Name: USspawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &557775803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557775802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.76, y: -0.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2024780091}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &562924541
 GameObject:
   m_ObjectHideFlags: 0
@@ -10457,6 +10488,7 @@ Transform:
   - {fileID: 207496383}
   - {fileID: 1349227793}
   - {fileID: 1708805697}
+  - {fileID: 557775803}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11233,6 +11265,14 @@ PrefabInstance:
       propertyPath: Panal
       value: 
       objectReference: {fileID: 1231465617}
+    - target: {fileID: -6866723035789439504, guid: 81832d4f824b19a49a21f3ea10c98886, type: 3}
+      propertyPath: USspawn
+      value: 
+      objectReference: {fileID: 557775803}
+    - target: {fileID: -6866723035789439504, guid: 81832d4f824b19a49a21f3ea10c98886, type: 3}
+      propertyPath: UltimateStage
+      value: 
+      objectReference: {fileID: 2613438882033208643, guid: 0813ac6deb679a64f83f70ee34747d15, type: 3}
     - target: {fileID: -6866723035789439504, guid: 81832d4f824b19a49a21f3ea10c98886, type: 3}
       propertyPath: BossAttackSpawn
       value: 
