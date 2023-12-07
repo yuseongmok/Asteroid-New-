@@ -53,7 +53,7 @@ public class Ch3_DialogueManager : MonoBehaviour
 
     public void Skip()
     {
-        SceneManager.LoadScene("Play_Chp02");
+        SceneManager.LoadScene("Play_Chp03");
     }
 
     void ShowNextDialogue()
@@ -111,7 +111,7 @@ public class Ch3_DialogueManager : MonoBehaviour
             targetImage.sprite = images[0];
         }
 
-        if (ImageIndex == 10)
+        if (ImageIndex == 6)
         {
             LoadingScene.LoadScene("Play_Chp03");
         }
