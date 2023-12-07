@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSources:
-  - {fileID: 6356898236652723058, guid: 7e5b90edc7d0c6e49b8c54bad8c494a9, type: 3}
+  - {fileID: -5126508088522992960}
 --- !u!82 &-5126508088522992960
 AudioSource:
   m_ObjectHideFlags: 0
