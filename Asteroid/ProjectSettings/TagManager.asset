@@ -10,6 +10,8 @@ TagManager:
   - Money
   - Bullet_Slow
   - Money2
+  - Boss
+  - Henchman
   layers:
   - Default
   - TransparentFX

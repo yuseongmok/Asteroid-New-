@@ -53,5 +53,31 @@ public class PlayerBullet : MonoBehaviour
             // 총알 제거
             Destroy(gameObject);
         }
+
+        if (other.CompareTag("Boss"))
+        {
+            // 적 오브젝트에 데미지를 입힘
+            Boss hp = other.GetComponent<Boss>();
+            if (hp != null)
+            {
+                hp.TakeDamage(damage);
+            }
+
+            // 총알 제거
+            Destroy(gameObject);
+        }
+
+        if (other.CompareTag("Henchman"))
+        {
+            // 적 오브젝트에 데미지를 입힘
+            Henchman henchHp = other.GetComponent<Henchman>();
+            if (henchHp != null)
+            {
+                henchHp.TakeDamage(damage);
+            }
+
+            // 총알 제거
+            Destroy(gameObject);
+        }
     }
 }

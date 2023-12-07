@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: -2607156009820563800}
   - component: {fileID: 7120768328993737303}
   m_Layer: 0
-  m_Name: Enemy 2
+  m_Name: Pingu
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7edc289b2efbe41bb21f5710946e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
+  moveSpeed: 4
   maxHealth: 100
   damage: 15
   player: {fileID: 0}
