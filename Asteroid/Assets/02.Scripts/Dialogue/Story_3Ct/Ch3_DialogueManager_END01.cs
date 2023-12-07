@@ -98,7 +98,7 @@ public class Ch3_DialogueManager_END01 : MonoBehaviour
     void ChangeImage()
     {
         // 이미지 체인지
-        if (ImageIndex == 2)
+        if (ImageIndex == 1 || ImageIndex == 5)
         {
             targetImage.sprite = images[1];
         }
@@ -112,7 +112,7 @@ public class Ch3_DialogueManager_END01 : MonoBehaviour
         }
 
 
-        if (ImageIndex == 5)
+        if (ImageIndex == 7)
        {
             LoadingScene.LoadScene("Stage");
        }

@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7edc289b2efbe41bb21f5710946e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
-  maxHealth: 150
-  damage: 15
+  moveSpeed: 5
+  maxHealth: 200
+  damage: 30
   player: {fileID: 0}
   soundManager: {fileID: 9046217907547845067}
 --- !u!114 &9046217907547845067
@@ -281,7 +281,7 @@ Transform:
   m_GameObject: {fileID: 7279369773605974437}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.908, y: 3.908, z: 3.908}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2988620530069975757}
@@ -328,7 +328,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9cd277adc05d4934680043368405f233, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e386e98210e376a4684bfc6db03e2805, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -94,7 +94,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1090623895384806830}
   - component: {fileID: 1325812340188960009}
-  - component: {fileID: 7638101508193023429}
   - component: {fileID: 8509090730337357051}
   - component: {fileID: -5386562005787000268}
   - component: {fileID: -307703495565171966}
@@ -175,21 +174,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7638101508193023429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7547512814342186316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 733e28d7588847a47a76881b6ca616c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
-  maxY: 3
-  minY: -3
 --- !u!58 &8509090730337357051
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -239,9 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7edc289b2efbe41bb21f5710946e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
-  maxHealth: 100
-  damage: 15
+  moveSpeed: 5
+  maxHealth: 300
+  damage: 40
   player: {fileID: 0}
   soundManager: {fileID: -2607156009820563800}
 --- !u!114 &-2607156009820563800

@@ -111,7 +111,7 @@ public class Ch3_DialogueManager : MonoBehaviour
             targetImage.sprite = images[0];
         }
 
-        if (ImageIndex == 6)
+        if (ImageIndex == 7)
         {
             LoadingScene.LoadScene("Play_Chp03");
         }

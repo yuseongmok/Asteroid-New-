@@ -208,9 +208,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7edc289b2efbe41bb21f5710946e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
-  maxHealth: 1
-  damage: 1000
+  moveSpeed: 2
+  maxHealth: 500
+  damage: 1001
   player: {fileID: 0}
   soundManager: {fileID: 8724042729719573681}
 --- !u!114 &188453776724365314
