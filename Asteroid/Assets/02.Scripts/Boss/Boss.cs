@@ -30,6 +30,10 @@ public class Boss : MonoBehaviour
     public GameObject warningEffect;
     public Transform warnigSpawnPoint;
 
+    // 데미지 입었을 때 효과
+    public GameObject Panal;
+    private float damageDisplayTime = 0.2f; // 데미지 표시 시간
+
     public enum Pattern
     {
         normar,
@@ -45,6 +49,7 @@ public class Boss : MonoBehaviour
     {
         currentHp = maxHp;
         timer = 0f;
+        Panal.SetActive(false);
     }
 
 
@@ -108,6 +113,7 @@ public class Boss : MonoBehaviour
     {
         currentHp -= damage;            // 데미지만큼 현재 체력 감소
         HpBar.value = currentHp;        // Slider 줄어듦
+        StartCoroutine(DisplayDamagePanal()); // 데미지 패널을 표시하는 코루틴 시작
 
         if (currentHp <= 500)
         {
@@ -151,5 +157,13 @@ public class Boss : MonoBehaviour
         GameObject temp3 = Instantiate(warningEffect, warnigSpawnPoint.position, warnigSpawnPoint.rotation);
         Destroy(temp3, 0.4f);
         yield return new WaitForSeconds(0.7f);
+    }
+
+    // 데미지 패널을 표시하는 코루틴
+    private IEnumerator DisplayDamagePanal()
+    {
+        Panal.SetActive(true);
+        yield return new WaitForSeconds(damageDisplayTime);
+        Panal.SetActive(false);
     }
 }
