@@ -102,7 +102,7 @@ public class ShopUI : MonoBehaviour
         {
             case 0:
                 TowerName.text = "레일건";
-                TowerPower.text = "공격력 100";
+                TowerPower.text = "공격력 50";
                 TowerSpeed.text = "보통";
                 TowerExplanation.text = "공격력이 강한 레이저를 발사";
                 break;
@@ -117,7 +117,7 @@ public class ShopUI : MonoBehaviour
                 TowerName.text = "아이스";
                 TowerPower.text = "공격력 100";
                 TowerSpeed.text = "보통";
-                TowerExplanation.text = "공격시 적 이동속도 50%감소";
+                TowerExplanation.text = "공격시 적 이동속도 70%감소";
                 break;
             case 3:
                 TowerName.text = "마그마";
@@ -129,7 +129,7 @@ public class ShopUI : MonoBehaviour
             case 4:
                 TowerName.text = "라이트닝";
                 TowerPower.text = "공격력 5";
-                TowerSpeed.text = "빠름";
+                TowerSpeed.text = "매우 빠름";
                 TowerExplanation.text = "레이저 번개를 쏜다";
                 break;
 

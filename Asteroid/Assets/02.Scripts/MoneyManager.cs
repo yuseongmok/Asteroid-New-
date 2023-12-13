@@ -6,33 +6,52 @@ using UnityEngine.UI;
 
 public class MoneyManager : MonoBehaviour
 {
-    public static MoneyManager Instance { get; private set; }
+    public static MoneyManager Instance { get; private set; } //static
     public int Money { get; private set; }
 
-    [SerializeField]
-    private TextMeshProUGUI moneyText; // Money 수치를 표시할 UI Text
+    public TextMeshProUGUI moneyText; // Money 수치를 표시할 UI Text
 
-    
-    private void Awake()
+
+    public void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            Money = 50;
         }
         else
         {
             Destroy(gameObject);
         }
-
-        
     }
 
-    
-
-    private void UpdateMoneyText()
+    private void OnDestroy()
     {
-        moneyText.text = "" + Money.ToString(); // Money 수치를 UI Text에 표시
+        if (Instance == this)
+        {
+            Instance = null;
+        }
+    }
+
+    public void UpdateMoneyText()
+    {
+        if (moneyText == null)
+        {
+            // 만약 moneyText가 null이면 MoneyUI 오브젝트를 찾아서 할당합니다.
+            GameObject moneyUIObject = GameObject.Find("MoneyUI");
+
+            if (moneyUIObject != null)
+            {
+                moneyText = moneyUIObject.GetComponent<TextMeshProUGUI>();
+
+            }
+        }
+
+        if (moneyText != null)
+        {
+            moneyText.text = "" + Money.ToString(); // Money 수치를 UI Text에 표시
+        }
     }
 
     public void AddMoney(int amount)
@@ -48,13 +67,9 @@ public class MoneyManager : MonoBehaviour
             Money -= amount;
             UpdateMoneyText();
         }
-        else
-        {
-            Debug.Log("Not enough money!");
-        }
     }
 
-    private void Start()
+    public void Start()
     {
         UpdateMoneyText(); // 게임 시작 시 Money 수치를 UI Text에 표시
     }

@@ -67,7 +67,7 @@ public class MonsterController : MonoBehaviour
 
         if(other.CompareTag("Bullet_Slow"))
         {
-            moveSpeed = slow * 0.7f;    // 이동속도 50% 느려짐
+            moveSpeed = slow * 0.3f;    // 이동속도 50% 느려짐
             SlowTF = true;
         }
     }
@@ -89,13 +89,7 @@ public class MonsterController : MonoBehaviour
             // 예: 점수 증가, 이펙트 재생 등
             gameObject.SetActive(false);
 
-        if (gameObject.CompareTag("Money2"))
-        {
-            MoneyManager.Instance.AddMoney(50);
-            Debug.Log("돈 운석 파괴됨");
-        }
-        // 여기에 적 캐릭터가 사망할 때 수행할 작업을 추가할 수 있습니다.
-        // 예: 점수 증가, 이펙트 재생 등
+       
         gameObject.SetActive(false);
     }
 

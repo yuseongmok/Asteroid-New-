@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
-  damage: 20
+  damage: 100
   soundManager: {fileID: 6256528981345179766}
 --- !u!58 &-8229866084881649988
 CircleCollider2D:

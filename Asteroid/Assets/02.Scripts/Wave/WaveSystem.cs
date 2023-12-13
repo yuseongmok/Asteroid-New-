@@ -47,8 +47,7 @@ public class WaveSystem : MonoBehaviour
         ToswerOn.onClick.AddListener(TowerOn);
         UpdateWaveText();  // 초기 Wave 번호 표시
         soundManager.PlaySound(0);
-        MoneyManager.Instance.AddMoney(50);
-
+       
     }
     // Wave Text 
     private void UpdateWaveText()

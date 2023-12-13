@@ -65,6 +65,7 @@ public class Menu : MonoBehaviour
     // 메뉴창에서 계속하기 버튼을 눌렸을 때 실행하는 코드
     public void GoStart()
     {
+        SceneManager.LoadScene("Stage");
         Time.timeScale = 1f;
         pauseMenuCanvas.SetActive(false);
         GameIsPaused = false;
